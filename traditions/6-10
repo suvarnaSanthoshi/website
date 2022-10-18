@@ -1,0 +1,1627 @@
+web applications - UI (User Interface)
+
+UI (angular/react/vue/ext) 
+
+angular framework 
+
+html , css , javascript 
+
+html : hyper text markup language  - hyper text - webpages linked together
+								- mark up - a text document with tags that tell web browser how to structure it to display.
+-----
+develop web pages/Berners Lee / 1991
+
+why?
+-----
+used to create web pages/web sites
+
+web pages / internet navigation/ UI / game development
+
+
+file?
+-----
+.txt  .xls  .java .py .r 
+.html
+
+how to write the HTML code:
+----------------------------
+<!DOCTYPE html>   tags,  it should have open tag and close tag
+<html>
+<head>
+</head>
+<body>
+</body>
+</html>
+
+Line Break element : <br /> - used to break the statement /content
+align :<center></center>
+anchor hyper reference : <a href>  <a> - hyperlink   href = url ex(https://www.redbus.in/rPool/)
+   <a href="www"></a>
+images : <img></img>
+<img src=""></img>
+
+href,<a>,src,<Img>,width, height,style,title,center,br
+
+CSS : cascading style sheets  <link type= href=>  <script type= src= >
+CSS in HTML - style
+
+table :
+<table>
+<th><tr><td>
+</table>
+
+tr - table row
+td - table data
+th - table head
+
+label : alias name 
+input: button , text box , email , password
+
+<input type>
+
+table :
+------
+<table border="1" cellpadding = "20" cellspacing="10"  background= "C:/Prudhvi_Data/DadLorry.jpg" bordercolor = "red" height = "500" width = "500">
+cellpadding - 
+cellspacing -
+
+rowspan-
+colspan-
+
+bgcolor - attribute/tag - set the background color for whole table or single cell
+background -attribute/tag - set the background image for whole table or single cell
+border - attribute/tag - set the border color for whole table or single cell
+
+height
+width
+
+caption
+
+table header,table footer , table body
+<thead>  <tfoot> <tbody>
+
+List:
+-----
+An List <ul> unordered list  <ol> - order list
+
+<ol type = "a" start = "5">
+<ol type = "1" start = "5">
+<ol type = "i" start = "5">
+<ol type = "A" start = "5">
+
+HTML Definition List
+
+<dl> - define the start of list, <dt> - word , <dd> - desc , </dl> - close define 
+
+Email :
+-------
+
+<a href = "mailto: abc@example.com">Send Email</a>
+
+Blocks :
+--------
+<div>  - block tag - used to group the elements
+<span> - inline element  - group of inline elements
+
+Html Forms:
+-----------
+forms - whenever you want to collect some data for a site user.
+name,email, password, contact,address etc.
+
+form - post this data to backend server such as restapi call,php.backend application process the data as per business logic.
+
+html tag for forms=> 
+ <form>
+      text fields, text area, drop down ,radio buttons , checkboxes etc.
+ </form>
+ 
+ <form action = "javascript.js" method = GET|POST|PUT|DELETE>
+    text fields, text area, drop down ,radio buttons , checkboxes etc.
+ </form>
+
+textinput controls
+checkboxes
+radio box
+select box
+file select boxes
+hidden controls
+clickable button/events
+submit and reset buttons
+
+textinput :
+-----------
+<input type = "text" name= "fname">
+
+attributes:  type , name(id) = server to recognize the value , value = initial value , size = 20 , max-length = 15
+
+password :
+---------
+<input type = "password" name= "passwrd">
+
+attributes:  type , name(id) = server to recognize the value , value = initial value , size = 20 , max-length = 10
+
+text-area:
+----------
+<textarea rows = "5" cols = "50" name= "description">
+attributes : name , rows , cols 
+
+checkbox:
+---------
+check box are used to when we have more than one option is required to be selected.
+<input type = "checkbox" name="btech" value = "on" >
+attributes : type , name , value , checked
+
+Radio Button :
+------------
+radio buttons are used when out of many options only one option is required/selected.
+
+<input type = "radio" name="Male" value="male">Male
+attributes - type , name , value
+
+Drop-down Box / Select Box :
+----------------------------
+select box is one which provides multiple options , out of which we can select only one required option.
+<select name = "dropdown">
+<option value="B.Tech">Bachelors of Technology</option>
+<option value="Degree">Bachelors Degree</option>
+<option value="Intermediate">Inter</option>
+<option value="ssc">SSC</option>
+<select>
+
+attributes - name,value, selected, size
+
+
+File-upload/file-select box:
+------------------------------
+if you want upload file to your website
+<input type = "file" name  ="fileupload" accept="*"/> 
+attributes : - type , name , accept(specify the type of can be accepted by server)
+
+Buttons(clickable button):
+-------------------------
+submit - submit a form
+reset - this button automatically reset the form controls to their initial value
+button - trigger / run the code in javascript (client-side) when user click normal button
+image - clickable button we can add an image in background
+
+<input type = "submit" name="submit" value="Register">
+<input type = "reset" name="reset" value="Reset">
+<input type = "button" name="ok" value="OK">
+<input type = "image" name="imagebutton" src="">
+
+html - integrate - css & js
+-----------------------------
+CSS : Cascading Style Sheets shows how to represent the data on the screens
+each property in css has a name and a value , seperated by (:) 
+if you have multiple properties , these properties should be seperated by (;)
+style  - 
+<style>
+.h3{
+ color:red;  - property
+ width:400;  - property
+}
+</style>
+
+you can use CSS in 3 ways in your html document:
+------------------------------------------------
+1.External File - you can define all style tags inside seperate (.css) file and then include it in html using <link> tag
+2.internal style tag - define style attributes in header section of the html document using <style> tag
+3.in-line style sheet - define style attributes along with html tags using style attribute/
+
+Script:
+-------
+a small program which is used to make your web page interactive.
+
+ex:mouse-hover, alert box
+small functions to make web page interactive,these are called as events.
+Now a days , JS is associated with frameworks - angular / react/ vue /ext /BB script (frameworks)
+
+Ways to make HTML interact with Javascript:
+--------------------------------------------
+1.External file
+2.Internal script
+
+
+
+Style (CSS - cascading style sheets) - colors, text-align ,font-size , positions
+Js (javascript)
+
+CSS :(cascading style sheets) - is used to control the style(colors/font/padding/alignment etc)of a web document/page.
+----
+Why?
+----
+creating color web pages
+web designer
+control over html to manage design of web page
+
+Advantages :
+-------------
+Css save time  - write css once and reuse the same file for multiple html
+loads pages faster - if you are using CSS , you dont need to write html css attributes tags everytime.
+Easy maintance - to make any global change,we simply add style changes globally
+Global web standards - html attributes deprecated, use seperate css. (firefox, yahoo, chrome, edge,IE)
+
+CSS comprises of style rules that are intrepreted by browser and then applied to elements in your document.
+
+style rule - 3 components:
+-------------------------
+selector - selector is nothing but html tag , h1 , p , button
+
+property  - it is a type html attribute which are converted into css properties. color , border, padding
+
+value - the value assigned to the property - red or green
+
+selector { property : value ; }  - syntax for style rule
+
+table { border : 1px solid green ; background : red; padding: 25px;}
+
+
+h1,p{
+	color:red;  h1, p - selector , color - property , red - value
+}
+
+Type Selectors:
+---------------
+selector - table / h1 / p
+
+universal selector (* ) - rather than selecting one element for css , we can add css for all elements globally.
+
+class selector(.name) - when we select a class with multiple rules , all rules will be applicable to class tags
+.first{
+  color:red;
+  font-size:50px;
+}
+.second{
+	color:green;
+	font-size:25px;
+}
+.third{
+	color:blue;
+	font-size:15px;
+}
+
+grouping selectors - add multiple selectors at same page
+
+h1,h2,h3,p{
+color:red;
+}
+
+id selector - #name {color:red;}( style id = name )
+
+CSS - Inclusion: - associate your css into html files is called inclusion(internal css style tag)
+----------------
+1.Embedded css element  - <style>
+
+ <style> - is used to put css rules into html document using <style> element.
+			this tag is placed inside the head
+			
+  attributes : type = "text/css"		type = "text/javascript" (what type of data you are going to use in this tag)
+  
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body{
+	background-color : linen;
+}
+h1{
+	color: maroon;
+	margin-left :500px;
+}
+p{
+	color:blue;
+}
+</style>
+</head>
+<body>
+<h1>Web Application</h1>
+<p>HTML + CSS understanding</p>
+</body>
+</html>
+
+  
+2.Inline-css : we are going add style in the html tag
+----------------
+<input type = "text" style = "color:red;">
+
+style - value of style attribute will be the combination of multiple properties seperated by semi colon(;)
+
+<body style="background:linen;">
+<h1 style = "color:red;  margin-left:500px;">Web Application</h1>
+<p style= "color:blue; margin-left:40px;">HTML + CSS understanding</p>
+
+3.external file - css : <link> tag 
+--------------------
+<link rel = "stylesheet" type="text/css" href="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/style.css" >
+
+attribute:--
+rel = stylesheet
+type = text/css
+href = filepath
+
+CSS - Measurement Units:
+------------------------ 
+
+% - define an measurement in percentage -  ex : font-size : 16pt , line-height:125%
+cm - centimeters   div {margin-bottom :2cm}
+in - inches
+mm- millimeter
+pc - pica (6 inch or 12 pt)
+pt   - points
+px - pixel
+
+Css - colors:(specify the color) VIBGYOR (RAINBOW) 
+-------------
+formats         :  syntax :   Example :
+-----------------------------------------
+HexCode         : #RRGGBB :    {color : #FF0000;}  //adobe photoshop ,jasc paint
+ShortHexCode    : #RGB	  :    {color : #6A7;}
+keyword			: black,blue :  {color : red;}
+
+Css - Gradients :(gradients displays the combination of two or more colors)
+-----------------
+
+Css - backgrounds:
+------------------
+background color (background-color to set the background as a color)
+
+style = "background-color:linen;"
+
+background image (background-image to set the background as a image)  
+
+background-repeat - if your background is small , whatever is the length of single page application  , till that much length your images will be added on one another
+
+background-image(background-repeat = repeat-x) repeat images multiple times in horizantal 
+background-image(background-repeat = repeat-y) repeat images multiple times in vertical 
+background-position:200px  : how much length you want to give as padding.
+
+CSS - fonts(for words/content/text - not for background/color/images): will help you to set the font type , font size , font style 
+------------
+font-family : change face of font
+<h3 style="color:red;background-color:yellow;font-family:georgia,garamond,serif;">Select your skills</h3>
+font-style : change the font style italic bold
+<h3 style="color:red;background-color:yellow;font-style:italic;font-weight:bold;">Select your Gender</h3>
+font-variant : small -caps effect
+<h3 style="color:red;background-color:yellow;font-variant:small-caps;">Select your Highest Education Background</h3>
+font-weight : increase /decrease how the bold or light a font appears.
+functionality to specify how bold a font is. - normal , bold , bolder, lighter , 100, 200 , 300.
+font-size: increase /decrease the size of the font -ex : 20px , small , large 
+
+Css - text : how to manipulate text using css properties. 
+-----------
+color : - set the color for the text.
+direction : - set the direction text
+letter-spacing : - add or subtract space between the letters of a word
+word-spacing :- add or subtract space between the words of a sentence
+text-indent:- space / tab space indent the text of paragraph
+text - align : - align the text of a document.
+text-decoration : - underline, overline , strike through.
+text - transform : lower case (small), upper case (capital letters)
+white-space : control the flow and formatting of text.
+text-shadow : set the text shadow around the text.
+text-shadow:4px 4px 8px blue;
+1.value => X - co-ordinate
+2.value => Y - co-ordinate
+3.valie => the blur radius
+4.color => green
+
+Css-images :
+------------
+images play an important role in web pages.
+we should not include lot of images , but still whatever is important we can add few.
+Css plays an important role in control the display of images.
+
+Border - set the border of an image
+width - set the width of an image
+height - set the height of an image.
+
+image border :
+  used to set width of image border, this property can be set in value or %.
+  A width of zero value (units- cm/mm/inch/px/%) means no border.
+  
+image width :
+  used to set the width of an image.this property can be set in value or %.
+  
+image height : 
+  used to set the height of image.this property can be set in value or %.
+  
+Css - Links:
+------------
+used to inform how to set different properties for the hyper links.
+link - signifies unvisited link  a:link
+visited - signifies visited link  a:visited
+active - signifies whether link is active or not.  a:active
+
+Css- Tables :
+------------
+how to set the different css properties to a table
+
+border, border-collapse:collapse&seperate,border-spacing:2% , caption-side:top/bottom ,empty cells :hide
+
+<table border="1">
+
+Css-Margins :
+--------------
+margin property defines the space around the html element
+-ve values , margin overlap.
+
+margin - shorthand property for setting the marging for the html elements 
+margin-bottom : displays bottom margin of the HTML element
+margin-top : displays top margin of the HTML element
+margin-left : displays left margin of the HTML element
+margin- right :displays right margin of the html element.
+
+Css - padding:
+--------------
+padding property allows to specify how much space appears between the margin and html content/data.
+
+padding -  shorthand property for setting the padding for the html elements
+padding-left : left side padding of html content
+padding-right :rightside padding of html content
+padding-top : top padding of html content
+padding-bottom : bottom padding of html content.
+
+Css-cursors:
+------------
+
+cursor allows to specify the type of mouse/cursor symbol displayed to user.
+
+auto - shape of cursor depends on context area it is over.
+<div style="cursor:auto;">auto</div>
+<div style="cursor:crosshair;">crosshair</div>
+<div style="cursor:pointer;">pointer</div>
+<div style="cursor:move;">move</div>
+<div style="cursor:text;">text</div>
+<div style="cursor:wait;">wait</div>
+<div style="cursor:help;">help</div>
+
+Css - scrollbars :
+------------------
+whenever the html elements are larger than the amount of space allocated.
+
+.scroll{
+	display:block;
+	border:1px solid black;
+	padding:5px;
+	margin-top:5px;
+	width:300px;
+	height:50px;
+	overflow:scroll;
+}
+
+CSS - Visibility:
+------------------
+css visibility attribute/property will help you to hide elements from view.you javascript as well.
+hide the error message, to display only the content what you want.
+
+attribute :
+---------
+visible - content visible to the user.
+hidden - content is invisible to user.
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p style = "visibility:visible;> This is to make the visible element using visibility tag in css</p>
+
+<p style = "visibility:hidden;"> This is to make the invisible element using visibility tag in css</p>
+
+</body>
+</html>
+
+
+Css - Positioning :
+---------------------
+Css positioning helps you to put your html elements at whatever the location you want.
+
+relative positioning :
+ its a natural positioning in the page or absolute based on parent element.
+ 
+absolute positioning :
+ 
+ positioned at the specified coordinates relative to the screen corners.
+ 
+Fixed Positioning :
+
+fixed positioning allows you to fix the element to a particular area on the page , regardless screen size/scrolling/other elements.
+
+Move Left - used to navigate to left Ex : left:20px , add 20 pixels to left of the content.
+
+Move Right - used to navigate to Right
+
+Move Up - used to navigate to top
+
+Move Down - - used to navigate to bottom
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<p style="position:relative; left:15px; top:12px;"> This is has relative positioning based on screen size</p>
+
+<p style="position:absolute; left:80px; top:40px;"> This is has absolute positioning based on screen size</p>
+
+<p style="position:fixed; left:200px; top:100px;"> This is has absolute positioning based on screen size</p>
+
+
+</body>
+</html>
+
+
+Css- Layers :
+-------------
+gives an opportunity to create layers of various divisions.
+z-index property is used along with position property to create an effect on layers.
+z-index = 1 ()red, z-index=2 blue, z-index =3 yellow
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<div style = "background-color:red;
+				width:300px;
+				height:100px;
+				position:relative;
+				top:10px;
+				left:80px; z-index:3;"> Div tag</div>
+<div  style = "background-color:yellow;
+				width:300px;
+				height:100px;
+				position:relative;
+				top:-60px;
+				left:35px; z-index:2;"> Div tag </div>
+<div  style = "background-color:green;
+				width:300px;
+				height:100px;
+				position:relative;
+				top:-200px;
+				left:120px; z-index:1;">  Div tag</div>
+</body>
+</html>
+
+HTML + CSS (static  web page) => actions are pending(Javascript)
+
+
+Event - one task/response
+
+JavaScript:(Client-side programming language) - first name ->Livescript , Netscape -> javascript
+------------
+compiler - complete run & error list
+interpreter - unable to run your program completely & error occur 
+
+Javascript is a light weight , interpreted programming language.
+it is designed for creating network-centric applications.
+specified syntaxes , if you write the code in specfied syntax/keywords .
+
+Why we need JS:
+---------------
+Client side programming / server side programming:
+
+Client side programming - means we can have this programs in User interface/screen (Javascript)
+server side programming - means we have written in the backend  (java, python , scala)
+
+it help to develop web application which will have front-end(screen) and backend(java/Node js +database) as well
+create make websites interactive
+
+In HTML , for css - <style>   , for Javascript <script>
+
+<style>   attribute => type = text/css
+<script>   attribute => type = text/javascript
+
+<script language="javascript" type="text/javascript">
+	document.write("Hello world.!")
+</script>
+
+
+syntax:
+-------
+function functionname(){
+	alert("Hello Team ..!")
+}
+
+
+
+
+javascript frameworks(ready code):
+---------------------------------
+
+Angular 
+React
+JQuery
+Vue Js
+Ext js
+Ember js
+Meteor
+Node js
+Backbone js
+
+where we can apply Javascript frameworks:
+------------------------------------------
+Client side validation(validate the input data provided by the user on client side)
+manipulating html pages data  / html elements
+User notifications such as dynamic pop-up on web pages
+server side applications (Node js)
+
+Advantages of javascript :
+--------------------------
+Less server interaction - javascript you have less server interaction while performing validation etc.
+immediate feedback to the users - javascript will help to provide immediate feedback / popups to the user
+increased interactivity - javascript helps in faster interactive web pages
+rich interfaces - drag & drop components 
+
+Limitations of Javascript:
+---------------------------
+we should not allow reading or writing of files in java script, security issues.
+javascript cannot be used networking applications. 
+javascript multi processing / multithreading
+
+Javascript - syntaxes:
+----------------------
+javascript can be implemented using statements that are placed in between script tags in HTML web pages.
+
+<script>....</script>
+
+<script language = "javascript" type = "text/javascript" >
+	javascript code
+</script>
+
+function functionname() {
+   // statements or logic
+}
+
+
+language : specifies what scripting language you are using.  language = "javascript"
+type : scripting language & its value   type = "text/javascript"
+
+Semicolons are optional :
+-------------------------
+
+variables - name/idenfier to provide some value inside it.
+
+<script language="javascript" type = "text/javascript">
+ var a = 10 ;
+ var b = 20;
+ var c = a+b;
+ document.write(c);
+</script>
+
+Comments in Javascript:
+-----------------------
+one line comments => //   //alert("2 nd alert");  
+
+whole block comments=> /**   alert("2 nd alert");    */  
+
+javascript placements :
+-----------------------
+where we need to add javascript in html files will be given by javascript placements.
+
+1. <head>..</head>
+2. <body>..</body>
+3. <head>..</head> && <body>..</body>
+4. you can javascript in external file as well. 
+
+sample code :1.Head 2.body 3.file
+==============
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" type = "text/javascript">
+function popup() {
+   alert("Hello Team ..!");
+}
+
+function add(){
+	var a = 100 ;
+	var b = 200;
+	var c = a+b;
+	alert(c);
+	
+}
+</script>
+</head>
+<body>
+<input type = "button" onclick="popup()" value="alert"/>
+
+<input type = "button" onclick="add()" value="add a+b"/>
+
+</body>
+</html>
+
+4.reading js from external file:
+
+<!DOCTYPE html>
+<html>
+<head>
+<script type = "text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+</head>
+<body>
+<input type = "button" onclick="popup()" value="alert"/>
+<input type = "button" onclick="add()" value="add a+b"/>
+</body>
+</html>
+
+javascript file data:
+
+function popup() {
+   alert("Hello Team ..!");
+}
+
+function add(){
+	var a = 1000 ;
+	var b = 2000;
+	var c = a+b;
+	alert(c);
+	
+}
+
+variables:
+----------
+name used to store the data inside it.
+
+
+var a =10; var b =20;
+
+datatypes:
+----------
+number - 123 , 123.5 ,646464.9887
+Strings - "java"  - always use double quotes to put data of sentence
+boolean - true / false
+
+var name = "java";
+
+document.write(name);
+
+Ex:
+---
+<!Doctype html>
+<html>
+<head>
+
+<script type="text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+
+</head>
+<body>
+<input type="button" onclick="display()" value="press here">
+
+<input type="button" onclick="variabletest()" value="print variables">
+</body>
+</html>
+
+script.js:
+---------
+function display(){
+  	alert("I am from external file");
+}
+
+function variabletest(){
+	
+	var name="my name is prudhvi";
+	
+	var a = 10;
+	var b = 20;
+	
+	alert(name);
+	document.write(name + "   "+(a+b));
+	
+	
+	
+}
+
+
+
+
+Operators: operands()
+----------
+
+4 + 5 = 9  operands 4,5  operator  +
+
+arithematic operator ( + - * / %)
+relational operator (< > <= >=)
+logical operators(&& || !) - applied b'w tow conditions
+Assigment operators (=)
+
+a = 10 b = 20 c=30
+(a<b) && (a<c) 
+
+true && true -> true
+false && true -> false
+true && false -> false
+false && false -> false
+
+(a<b) || (a<c) 
+
+true || true -> true
+true ||false -> true
+false || true -> true
+false || false -> false
+
+!(a<b) true => false 
+
+Control statements: to control the flow of execution of the programming logic.
+-------------------
+
+if-else
+
+syntax:
+-------
+
+ 
+if(condition){  // true
+  // logic
+}else{
+	//logic
+}
+
+
+
+
+else - if
+
+if(nconditio){
+	//logic
+}else if(condition){
+
+}else if(condition){
+
+}else{
+
+}
+
+
+
+switch:
+-------
+
+switch(2){
+
+case 1: logic
+break;
+case 2 : logic
+break;
+
+case 3: logic
+break;
+default : 
+
+
+}
+
+for
+
+count = 0;
+
+
+for(initialisation;condition;increment/decremetor)
+	
+for(count = 0 ; count < 8 ; count++ )       count++   =>( count = count+1)  count-- (count = count-1)
+
+while:
+
+count = 0;
+while(count<10){
+count++;
+}
+
+break
+
+
+
+
+Example :
+-------------
+
+<!Doctype html>
+<html>
+<head>
+<script type="text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+</head>
+<body style="background-color:linen;">
+<input type="button" onclick="ifelse()" value="check eligibility for vote"/>
+
+<br>
+
+
+
+<input type="button" onclick="nestedif()" value="eligibleforJob" />
+<br>
+
+<input type = "text" id="prlang" value="enter skill">
+<input type="button" onclick="elseiftest()" value="checkelseif" />
+<br>
+<input type = "text" id="grade" value="enter grade"/>
+<input type="button" onclick="switchtest()" value="switch" />
+<br>
+<input type="button" onclick="fortest()" value="for" />
+<br>
+<input type="button" onclick="whiletest()" value="while" />
+</body>
+</html>
+
+Js:
+---
+
+function ifelse(){
+	 var age =16;
+	 
+	 if(age>18){  //based on condition check - true
+		 document.write("eligible for voting");
+	 }else{
+		 document.write("not eligible for voting");
+	 }
+	
+}
+
+function nestedif(){
+	
+	var age = document.getElementById("voteage").value;
+	document.write(age);
+	
+	if(age>18){
+		document.write("eligible for voting");
+		document.write("<br />");
+		var jobage = 22;
+		if(jobage>20){
+			document.write("eligible for occupation");
+		}else{
+			document.write("not eligible for occupation");
+		}
+	}else{
+		document.write("not eligible for voting");
+	}
+}
+
+
+function elseiftest(){
+	
+	var name = document.getElementById("prlang").value;
+
+	
+	if(name=="python"){
+		document.write("selected for python");
+	}else if(name=="java"){
+		document.write("selected for java");
+	}else if(name=="net"){
+		document.write("selected  for net");
+	}else{
+		document.write("not selected");
+	}
+}
+
+function switchtest(){
+	
+	var grade = document.getElementById("grade").value;
+	
+	switch(grade){
+		case '1' : document.write("Excellent");
+		break;
+		case '2' : document.write("Good");
+		break;
+		case '3' : document.write("Average");
+		break;
+		case '4' : document.write("below average");
+		break;
+		default : document.write("please provide the grade");
+		
+	}
+}
+
+
+function fortest(){
+	
+	var count;
+	for(count = 0 ; count<12 ; count++){
+		
+		document.write(count);
+		document.write("<br />");
+	}
+			
+}
+
+
+function whiletest(){
+	
+	var count = 0;
+	while(count<=20){ //true
+		
+		document.write(count);
+		document.write("<br />");
+		count++;
+	}
+			
+}
+
+Functions:
+----------
+a function is a group of reusable code which can be used anywhere in your program.
+function eliminates need of writing same code multiple.
+functionname should not contain any keywords or nums.
+
+Syntax :
+---------
+
+<script>
+function addValues(){ //params/arguments  
+  // logic
+}
+
+</script>
+
+function parameters :
+----------------------
+
+Syntax :
+---------
+
+<script>
+function functionname(name,age,gender){//name-parameters/arguments/params/args
+  // logic
+}
+
+</script>
+
+function test(){
+var a,b = 10;
+
+return a+b;
+
+}
+
+return:
+-------
+return the data from a function.
+
+<!Doctype html>
+<html>
+<head>
+<script type="text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+</head>
+<body style="background-color:linen;">
+<input type="button" ondblclick="printdata()" value="print data"/><br>
+<input type="button" ondblclick="addvalues(10,20)" value="print data12"/><br>
+
+<input type="button" ondblclick="concatstring('java ',' program language')" value="concat"/><br>
+
+<input type="button" ondblclick="returnvalue()" value="return"/><br>
+
+</body>
+</html>
+
+function printdata(){
+	alert("hello");
+}
+
+function addvalues(one,two){
+	var c = one + two;
+	document.write(c);
+}
+
+function concatstring(x,y){
+	var name3 = x+y;
+	document.write(name3);
+}
+
+function givereturnvalue(first,second){
+	var res = first-second;
+	return res;
+}
+
+function returnvalue(){
+	var result = givereturnvalue(100,200);
+	document.write('after result '+result);
+}
+
+function dosubstraction(first,second){
+	var res = first-second;
+	return res;
+}
+
+function doaddition(first,second){
+	var res = first+second;
+	return res;
+}
+
+function returnvalue(){
+	var subres = dosubstraction(20,10);
+	document.write('after sub '+subres);
+	
+	document.write('<br />');
+	var addres = doaddition(20,10);
+	document.write('after add '+addres);
+	
+	document.write('<br />');
+	
+	var subres = dosubstraction(40,30);
+	document.write('after sub '+subres);
+	
+	document.write('<br />');
+	var addres = doaddition(40,30);
+	document.write('after add '+addres);
+	
+	
+}
+
+Events: (action performed on the web page based on user actions)
+---------------
+
+<!Doctype html>
+<html>
+<head>
+<script type="text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+</head>
+<body style="background-color:linen;">
+<input type="button" onmouseover="mouseover()" value="mouseover"/><br>
+<input type="button" onmouseout="mouseout()" value="mouseout"/><br>
+
+<input type="button" ondblclick="doubleclick('java ',' program language')" value="doubleclick"/><br>
+
+<input type="button" onmouseleave="mouseleave()" value="mouseleave"/><br>
+
+
+
+</body>
+</html>
+
+
+function mouseover(){
+	alert("mouse over the button");
+}
+
+function mouseout(){
+	alert("mouse out the button");
+}
+
+function doubleclick(){
+	alert("double click event occured");
+}
+
+function mouseleave(){
+	alert("mouse leave event occured");
+}
+
+
+Dialog boxes:
+-------------
+gives information to the user 
+and accept some confirmation.
+
+1.alert - warning
+2.confirm - user confirmation is needed
+3.prompt - accept input from user.
+
+<!Doctype html>
+<html>
+<head>
+<script type="text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+</head>
+<body style="background-color:linen;">
+<input type="button" onclick="alertdata()" value="alert"/><br>
+<input type="button" onclick="confirmdata()" value="confirm"/><br>
+
+<input type="button" onclick="promptdata()" value="prompt"/><br>
+
+</body>
+</html>
+
+function alertdata(){
+	alert("this is a alert box");
+}
+
+function confirmdata(){
+	confirm("this is confirmation box.please say yes or no.");
+}
+
+function promptdata(){
+	prompt("enter your name :" , "name here");
+}
+
+Javascript Objects:
+-------------------
+
+var employee = new Object();
+employee.name = "ramu";
+employee.age = 25;
+
+<!Doctype html>
+<html>
+<head>
+<script type="text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+</head>
+<body style="background-color:linen;">
+<input type="button" onclick="objecttest()" value="persondefault"/>
+
+<input type="button" onclick="customobject()" value="employeecustom"/><br>
+
+
+</body>
+</html>
+
+function objecttest(){
+	
+	var person = new Object(); // creating an object
+	person.name = "ramu";   // assign data to object properties
+	person.age = 25;
+	person.gender = "M";
+	
+	document.write("Name : "+person.name + " Age :" + person.age + " Gender :" + person.gender);
+	
+	document.write("<br />");
+	
+	var employee = new Object(); // creating an object
+	employee.name = "ramya";   // assign data to object properties
+	employee.age = 24;
+	employee.gender = "F";
+	
+	document.write("Name : "+employee.name + " Age :" + employee.age + " Gender :" + employee.gender);
+	
+}
+
+function employee(name,age,gender){
+	this.name = name;
+	this.age = age;
+	this.gender = gender;
+}
+
+function customobject(){
+	var emp = new employee('ramesh',25,'M');
+	document.write("Name : "+emp.name + " Age :" + emp.age + " Gender :" + emp.gender);
+}
+
+Arrays:
+------
+group of elements stored under same var.
+
+<!Doctype html>
+<html>
+<head>
+<script type="text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+</head>
+<body style="background-color:linen;">
+<input type="button" onclick="arraytest()" value="array"/>
+
+</body>
+</html>
+
+function arraytest(){
+	
+	
+	var fruits = ["apple","banana","mango"];
+	
+	document.write(fruits[0]);
+	document.write("<br />");
+	document.write(fruits[1]);
+	document.write("<br />");
+	document.write(fruits[2]);
+	document.write("<br />");
+	
+	var laptops = new Array("HP","Lenovo","Dell");
+	
+    var count;
+	for(count = 0;count<laptops.length;count++){
+		document.write(laptops[count]);
+		document.write("<br />");
+	}
+	
+	
+	var mobiles = new Array("REDMI","APPLE","VIVO");
+	
+	var i = 0;
+	while(i<mobiles.length){  
+		document.write(mobiles[i]);
+		document.write("<br />");
+		i++;   // i = i+1
+	}
+}
+
+Error / Exception handling:
+--------------------------
+error /exception - runtime error
+
+1.try-catch-finally
+2.throw
+
+
+try{	
+	//logic
+}catch(e){
+	alert(e);
+}
+
+try - error trow
+
+
+catch - error catch
+
+finally - optional/choice , irrespective of error occured or may not occur.
+
+<!Doctype html>
+<html>
+<head>
+<script type="text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+</head>
+<body style="background-color:linen;">
+<input type="button" onclick="exceptiontest()" value="exception"/>
+
+</body>
+</html>
+
+function exceptiontest(){
+	
+	var a = 50;
+	var b = 0;
+	try{
+		if(b==0){
+			throw('divide by 0 is not possible');
+		}else{
+			alert(a/b);
+		}
+	}catch(e){
+		alert(e);
+	}
+	
+}
+
+Form Validations:
+-----------------
+
+<!Doctype html>
+<html>
+<head>
+<script type="text/javascript" src="C:/Users/prudh/Documents/workspace-spring-tool-suite-4-4.13.1.RELEASE/hbnttst/target/classes/com/hb/config/script.js">
+</script>
+</head>
+<body style="background-color:linen;">
+<form name="myForm" onsubmit="return(validateinputs());">
+<table border="1" cellpadding="2" cellspacing="2">
+
+<tr>
+<td>Name:</td>
+<td><input type = "text" name="Name" /></td>
+</tr>
+
+<tr>
+<td>Email:</td>
+<td><input type = "text" name="Email" /></td>
+</tr>
+
+<tr>
+<td></td>
+<td><input type="submit" value="submit"></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
+
+
+function validateinputs(){
+	
+	if(document.myForm.Name.value==''){
+		alert('please provide valid name');
+		document.myForm.Name.focus();
+		document.myForm.Name.value='please enter name here';
+		return false;
+	}
+	
+	if(document.myForm.Email.value==''){
+		alert("please provide email");
+		document.myForm.Email.focus();
+		document.myForm.Email.value='please enter email here';
+		return false;
+	}
+	
+	return (true);
+}
+
+
+Angular:
+---------
+open source javascript framework used to build web applications
+Typescript is the superset of javascript
+Typescript - built-in features animations,http services ,navigation , tool bars, menus etc..
+code javascript or typescript ?  Typescript (Class- components)
+
+Frontend application design
+web page design
+single page application
+
+angular (open source software (Google)) - Angular js , angular 2 , angular 4 
+
+Install:
+--------
+node js  (angular /vue /ext /react /node js(modules/packages/bundles - 200))
+npm - Node Package Manager 
+npm install -g @angular/cli   OR npm install -g @angular/cli@latest
+
+
+check the version:
+-------------------
+node -v (cmd)
+npm -v
+ng version (angular)
+
+project:
+--------
+ng new projectname (ng new learningapp)
+
+ routing module ? y /N
+ 
+ css
+ scss
+ sass
+ less
+
+
+ng serve  , start , manaul open
+ng serve --open  , start & automatic open
+
+
+
+html,css, typescript(components)
+
+
+
+->app.routing.module.ts
+->app.component.html
+->app.component.css
+->app.component.ts
+->app.component.spec.ts
+->app.module.ts
+
+service:(business logic)
+--------
+->studnetservice.ts
+->studnetservice.spec.ts
+
+
+Angular Modules:
+----------------
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+  ],
+  providers: [studnetservice],
+  bootstrap: [AppComponent]
+})
+
+
+declarations - whatever the components you want to load
+imports - modules whatever you application relies on , add these at imports
+providers - shared code/logic across the resources can be added in providers (ex:service layer)
+bootstrap - what you load on the startup of the application
+
+Angular - Components(class):
+----------------------
+ng generate component name Ex : ng generate component home  / ng g component home
+
+CREATE src/app/home/home.component.html (19 bytes) -> html
+CREATE src/app/home/home.component.spec.ts (612 bytes) -> testing
+CREATE src/app/home/home.component.ts (267 bytes) -> typescript  ->HomeComponent.ts -><app-root> 
+CREATE src/app/home/home.component.css (0 bytes) -> css
+UPDATE src/app/app.module.ts (467 bytes)   @NgModule(declarations - add)
+
+import statements -> value - address 
+
+Decorator:
+----------
+html elements
+css
+selector - classname
+
+@Component({
+	template: test/html
+	style: test/css
+	selector:app-home
+})
+
+
+CREATE src/app/home/home.component.ts (267 bytes) -> typescript  
+-> AppComponent.ts  <app-root> <</app-root> >
+-> HomeComponent.ts -> <app-home> </app-home>
+
+constructor - inject - constructor injection
+
+class load  - constructor loaded at the of class loading
+any data assignment to a variable of function - use constructor
+
+ngOnInit(){
+	//logic
+}
+
+variables :var a = 10;
+
+number,string, boolean -> 123,123.455 'C' , "hgfdhgfasj" , true or false
+
+var name = "Ram";
+
+Dynamically typed language  - python
+
+string name = "prudhvb";
+
+boolean status = true;
+
+name:string;   -> you can add datatype using :
+name="vakue"; -> dynamically typed language
+
+Data Binding :
+--------------
+Interpolation/Oneway binding /Twoway binding / Banana in a box
+
+interpolation - {{variable}}
+
+
+typescript value -> html {{name}}
+
+html raghav  -> typescript  
+
+Twoway binding / Banana in a box:
+
+[(ngModel)]   -> FormsModule
+
+@Inject(Document) document: Document{
+	
+	
+}
+
+this.document.get
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
